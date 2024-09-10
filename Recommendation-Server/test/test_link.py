@@ -24,11 +24,11 @@ data = {
     'Longitude' : 73.2988
 }
 
-resp = requests.post('https://crop-v1-88c71517a18e.herokuapp.com/recommend', json=data)
+resp = requests.post('.../recommend', json=data)
 
 print(resp.text)
 
 # crop info
-resp = requests.post('https://crop-v1-88c71517a18e.herokuapp.com/crop_details', json={'about_crop' : 'Rice'})
+resp = requests.post('.../crop_details', json={'about_crop' : 'Rice'})
 
 print(resp.text)
